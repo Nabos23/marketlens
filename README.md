@@ -77,9 +77,18 @@ graph TD
    ```
 
 5. **Configure environment variables:**
-   Copy `.env.example` to `.env` and insert your API key:
+   Copy `.env.example` to `.env` and set your preferred provider and API key:
    ```env
+   # Provider: 'openai' or 'groq'
+   LLM_PROVIDER=openai
+
+   # OpenAI Settings
+   OPENAI_API_KEY=your_openai_api_key_here
+   OPENAI_MODEL=gpt-4o-mini
+
+   # Groq Settings (Alternative)
    GROQ_API_KEY=your_groq_api_key_here
+   GROQ_MODEL=llama-3.3-70b-versatile
    ```
 
 ---
